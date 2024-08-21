@@ -1,0 +1,14 @@
+### Reserve room
+POST http://localhost:8080/bookings/reserve
+Content-Type: application/json
+
+{
+    "RoomID": 1,
+    "StartDate": "2024-09-02T00:00:00Z",
+    "EndDate": "2024-09-03T00:00:00Z",
+    "GuestID": 1
+}
+
+### Confirm reservation
+POST http://localhost:8080/bookings/1/confirm
+Content-Type: application/json
